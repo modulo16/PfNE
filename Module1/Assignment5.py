@@ -14,19 +14,19 @@ Process these ARP entries and print out a table of "IP ADDR" to "MAC ADDRESS" ma
 
 Two columns, 20 characters wide, data right aligned, a header column."""
 from __future__ import print_function, unicode_literals
-mac1 = "Internet  10.220.88.29           94   5254.abbe.5b7b  ARPA   FastEthernet4"
-mac2 = "Internet  10.220.88.30            3   5254.ab71.e119  ARPA   FastEthernet4"
-mac3 = "Internet  10.220.88.32          231   5254.abc7.26aa  ARPA   FastEthernet4"
+Mac1 = "Internet  10.220.88.29           94   5254.abbe.5b7b  ARPA   FastEthernet4"
+Mac2 = "Internet  10.220.88.30            3   5254.ab71.e119  ARPA   FastEthernet4"
+Mac3 = "Internet  10.220.88.32          231   5254.abc7.26aa  ARPA   FastEthernet4"
 
 #Testing purposes:
 #print(repr(mac1))
-entities1 = mac1.split()
-entities2 = mac2.split()
-entities3 = mac3.split()
-banner = "-" * 20
+Entities1 = Mac1.split()
+Entities2 = Mac2.split()
+Entities3 = Mac3.split()
+Banner = "-" * 20
 print("\n")
 print("{:>20}{:>20}".format("IP ADDR", "MAC ADDRESS"))
-print("{:>20}{:>20}".format(banner,banner))
-print("{:>20}{:>20}".format(entities1[1],entities1[3]))
-print("{:>20}{:>20}".format(entities2[1],entities2[3]))
-print("{:>20}{:>20}".format(entities3[1],entities3[3]))
+print("{:>20}{:>20}".format(Banner,Banner))
+print("{:>20}{:>20}".format(Entities1[1],Entities1[3]))
+print("{:>20}{:>20}".format(Entities2[1],Entities2[3]))
+print("{:>20}{:>20}".format(Entities3[1],Entities3[3]))
